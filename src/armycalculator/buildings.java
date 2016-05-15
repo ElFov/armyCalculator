@@ -30,6 +30,7 @@ public class buildings extends entities {
     // constructors
     
     //air and ground 3 ressources 
+     /** Constructor for a unit attacking air and ground and with a 3 ressources cost */
     public buildings(String newName, int newHP, int newBuildTime, int newRessourceCostOne, int newRessourceCostTwo, int newRessourceCostThree, Boolean moveable, Boolean targetGround, Boolean targetAir, int newDamageTypeGround, int newDamageTypeAir, int newDamageValueGround, int newDamageValueAir, Boolean repairPossible, Boolean sellItPossible, int valueToSell, int newROF, int newRT){
     
         super(newName,newHP,newBuildTime,newRessourceCostOne,newRessourceCostTwo,newRessourceCostThree);
@@ -48,6 +49,7 @@ public class buildings extends entities {
         
     }
     //ground only 3 ressources
+    /** Constructor for a unit attacking ground only and with a 3 ressources cost */
     public buildings(String newName, int newHP, int newBuildTime, int newRessourceCostOne, int newRessourceCostTwo, int newRessourceCostThree, Boolean moveable, Boolean targetGround, int newDamageTypeGround, int newDamageValueGround, Boolean repairPossible, Boolean sellItPossible, int valueToSell, int newROF, int newRT){
     
         super(newName,newHP,newBuildTime,newRessourceCostOne,newRessourceCostTwo,newRessourceCostThree);
@@ -63,6 +65,7 @@ public class buildings extends entities {
         
     }
     //air and ground 2 ressources 
+    /** Constructor for a unit attacking air and ground and with a 2 ressources cost */
     public buildings(String newName, int newHP, int newBuildTime, int newRessourceCostOne, int newRessourceCostTwo, Boolean moveable, Boolean targetGround, Boolean targetAir, int newDamageTypeGround, int newDamageTypeAir, int newDamageValueGround, int newDamageValueAir, Boolean repairPossible, Boolean sellItPossible, int valueToSell, int newROF, int newRT){
     
         super(newName,newHP,newBuildTime,newRessourceCostOne,newRessourceCostTwo);
@@ -81,6 +84,7 @@ public class buildings extends entities {
         
     }
     //ground only 2 ressources
+    /** Constructor for a unit attacking on ground only and with a 2 ressources cost */
     public buildings(String newName, int newHP, int newBuildTime, int newRessourceCostOne, int newRessourceCostTwo, Boolean moveable, Boolean targetGround, int newDamageTypeGround, int newDamageValueGround, Boolean repairPossible, Boolean sellItPossible, int valueToSell, int newROF, int newRT){
     
         super(newName,newHP,newBuildTime,newRessourceCostOne,newRessourceCostTwo);
@@ -96,6 +100,7 @@ public class buildings extends entities {
         
     }
     //air and ground 1 ressource 
+    /** Constructor for a unit attacking air and ground and with a 1 ressource cost */
     public buildings(String newName, int newHP, int newBuildTime, int newRessourceCostOne,Boolean moveable, Boolean targetGround, Boolean targetAir, int newDamageTypeGround, int newDamageTypeAir, int newDamageValueGround, int newDamageValueAir, Boolean repairPossible, Boolean sellItPossible, int valueToSell, int newROF, int newRT){
     
         super(newName,newHP,newBuildTime,newRessourceCostOne);
@@ -113,7 +118,8 @@ public class buildings extends entities {
         this.reloadTime = newRT;
         
     }
-    //ground only 2 ressources
+    //ground only 1 ressources
+    /** Constructor for a unit attacking on ground only and with a 1 ressources cost */
     public buildings(String newName, int newHP, int newBuildTime, int newRessourceCostOne, Boolean moveable, Boolean targetGround, int newDamageTypeGround, int newDamageValueGround, Boolean repairPossible, Boolean sellItPossible, int valueToSell, int newROF, int newRT){
     
         super(newName,newHP,newBuildTime,newRessourceCostOne);
@@ -128,7 +134,12 @@ public class buildings extends entities {
         this.reloadTime = newRT;
         
     }
-
+    // default constructor, air only with all default values
+    /** Constructor with default values, air only*/
+    public buildings(String newName){
+    
+        super(newName);   
+    }
     
     //methods || getters
     
