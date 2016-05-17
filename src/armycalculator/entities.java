@@ -27,7 +27,13 @@ public class entities {
      int ressource_cost_three =0;
     
     // constructors
-    /** Constructor using new name, hit points, build time and all three ressources costs */ 
+    /** Constructor using new name, hit points, build time and all three ressources costs
+     * @param newName 
+     * @param newHP 
+     * @param newBuildTime 
+     * @param newRessourceCostOne 
+     * @param newRessourceCostTwo 
+     * @param newRessourceCostThree */ 
     public entities (String newName, int newHP, int newBuildTime, int newRessourceCostOne, int newRessourceCostTwo, int newRessourceCostThree) {
     
         this.name = newName;
@@ -38,7 +44,12 @@ public class entities {
         this.ressource_cost_three = newRessourceCostThree;
     }
     
-    /** Constructor using new name, hit points, build time and 2 ressources costs */ 
+    /** Constructor using new name, hit points, build time and 2 ressources costs
+     * @param newName 
+     * @param newHP 
+     * @param newBuildTime 
+     * @param newRessourceCostOne 
+     * @param newRessourceCostTwo */ 
     public entities (String newName, int newHP, int newBuildTime, int newRessourceCostOne, int newRessourceCostTwo) {
     
         this.name = newName;
@@ -48,7 +59,11 @@ public class entities {
         this.ressource_cost_two = newRessourceCostTwo;      
     }
     
-    /** Constructor using new name, hit points, build time and 1 ressource cost */ 
+    /** Constructor using new name, hit points, build time and 1 ressource cost
+     * @param newName 
+     * @param newHP 
+     * @param newBuildTime 
+     * @param newRessourceCostOne */ 
     public entities (String newName, int newHP, int newBuildTime, int newRessourceCostOne) {
     
         this.name = newName;
@@ -57,44 +72,51 @@ public class entities {
         this.ressource_cost_one = newRessourceCostOne;
     }
     
-    /** Constructor using new name and all other values are default to 1 */ 
+    /** Constructor using new name and all other values are default to 1
+     * @param newName */ 
     public entities (String newName) {
     
         this.name = newName;
     }
     
     // methods creations || getters
-    /** Get the name of this entity */ 
+    /** Get the name of this entity
+     * @return  */ 
     public String getName(){
     
         return this.name;
     }
     
-    /** Get the current HP of this entity */ 
+    /** Get the current HP of this entity
+     * @return  */ 
     public int getHP() {
     
         return this.hp;
     }
     
-    /** Get the current Build time of this entity */ 
+    /** Get the current Build time of this entity
+     * @return  */ 
     public int getBuildTime() {
     
         return this.buildTime;
     }
     
-    /** Get the current cost for the main ressource of this entity */ 
+    /** Get the current cost for the main ressource of this entity
+     * @return  */ 
     public int getRessource_Cost_One() {
     
         return this.ressource_cost_one;
     }    
     
-    /** Get the current cost of the secondary resource of this entity */ 
+    /** Get the current cost of the secondary resource of this entity
+     * @return  */ 
     public int getRessource_Cost_Two() {
     
         return this.ressource_cost_two;
     } 
     
-    /** Get the current cost of the third resource of this entity, if any */
+    /** Get the current cost of the third resource of this entity, if any
+     * @return  */
     public int getRessource_Cost_Three() {
     
         return this.ressource_cost_three;
@@ -102,37 +124,43 @@ public class entities {
     
     //methods creations || setters
     
-    /** Change the name of this entity */
+    /** Change the name of this entity
+     * @param newName */
     public void setName(String newName){
     
         this.name = newName;
     }
     
-    /** Change the amount of hitpoints of this entity */
+    /** Change the amount of hitpoints of this entity
+     * @param newHP */
     public void setHP(int newHP) {
     
         this.hp = newHP;
     }
     
-    /** Change the amount of time to build this entity, in seconds */
+    /** Change the amount of time to build this entity, in seconds
+     * @param newTime */
     public void setBuildTime(int newTime) {
     
         this.buildTime = newTime;
     }
     
-    /** Change the amount of the main ressource of this entity to be build */
+    /** Change the amount of the main ressource of this entity to be build
+     * @param newCost */
     public void setRessource_Cost_One(int newCost) {
     
         this.ressource_cost_one = newCost;
     }    
     
-    /** Change the amount of the secondary ressource of this entity to be build */
+    /** Change the amount of the secondary ressource of this entity to be build
+     * @param newCost */
     public void setRessource_Cost_Two(int newCost) {
     
         this.ressource_cost_two = newCost;
     }   
     
-    /** Change the amount of the third ressource of this entity to be build, if any */
+    /** Change the amount of the third ressource of this entity to be build, if any
+     * @param newCost */
     public void setRessource_Cost_Three(int newCost) {
     
         this.ressource_cost_three = newCost;
